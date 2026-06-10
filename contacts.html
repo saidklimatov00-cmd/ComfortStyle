@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ComfortStyle</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Свяжитесь с нами</h1>
+        <nav>
+            <ul class="nav-flex">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Каталог</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-container">
+        <!-- 1.1. Информационная карточка магазина -->
+        <section class="contact-card">
+            <h2 class="card-title">Отдел продаж</h2>
+            <p class="dev-name">Климатов Саид</p>
+            <p class="specialization">Специализация: Консультация по подбору мебели и дизайну интерьера</p>
+            <div class="social-links">
+                <a href="#" class="social-item"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="#" class="social-item"><i class="fab fa-vk"></i> ВКонтакте</a>
+                <a href="#" class="social-item"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Адрес шоурума: г. Москва, улица Академика Миллионщикова, 20</p>
+        </section>
+
+        <!-- 1.2. Форма обратной связи -->
+        <section class="feedback-section">
+            <h2>Оставить заявку</h2>
+            <form action="#" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Тема обращения:</label>
+                    <select id="subject" name="subject">
+                        <option value="order">Расчет стоимости заказа</option>
+                        <option value="delivery">Вопрос по доставке</option>
+                        <option value="materials">Запрос образцов материалов</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Детали заказа:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Опишите, какую мебель вы ищете..." required></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="submit-btn">Отправить запрос</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 1.3. Дополнительный информационный блок (FAQ) -->
+    <section class="faq-section">
+        <h2>Полезная информация</h2>
+        <div class="faq-item">
+            <p><strong>График работы шоурума:</strong> Ежедневно с 10:00 до 21:00 без выходных.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Сроки изготовления:</strong> Стандартная мебель — 7-10 дней, по индивидуальным размерам — до 21 дня.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Условия сборки:</strong> При заказе от 50 000 рублей сборка мебели осуществляется бесплатно.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Климатов Саид. Мебельный салон ComfortStyle.</p>
+    </footer>
+</body>
+</html>

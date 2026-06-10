@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог мебели — ComfortStyle</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-couch"></i> Каталог мебели</h1>
+            <p class="subtitle">Коллекция для вашего интерьера: <span class="theme-name">Мебель для дома</span></p>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-grid">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="gallery.html" class="nav-link active"><i class="fas fa-th"></i> Каталог</a></li>
+                <li><a href="contacts.html" class="nav-link"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Панель управления и статистика -->
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-box"></i> Товаров: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i> В избранном: <span id="total-likes">0</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Сетка каталога (CSS GRID) -->
+        <div class="gallery-grid" id="image-gallery">
+            
+            <!-- Карточка 1 -->
+            <article class="image-card" data-category="living-room">
+                <div class="card-image">
+                    <img src="images/img1.jpg" alt="Диван" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Диван</h3>
+                    <p class="image-description">Мягкий двухместный диван в благородном синем цвете.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 2 -->
+            <article class="image-card" data-category="kitchen">
+                <div class="card-image">
+                    <img src="images/img2.jpg" alt="Обеденный стол" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Стол из дуба</h3>
+                    <p class="image-description">Натуральное дерево и надежный каркас для вашей кухни.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 3 -->
+            <article class="image-card" data-category="bedroom">
+                <div class="card-image">
+                    <img src="images/img3.jpg" alt="Кровать" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="3">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Кровать</h3>
+                    <p class="image-description">Ортопедическое основание и мягкое изголовье.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 4 -->
+            <article class="image-card" data-category="office">
+                <div class="card-image">
+                    <img src="images/img4.jpg" alt="Рабочее кресло" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="4">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Кресло</h3>
+                    <p class="image-description">Максимальный комфорт для отдыха</p>
+                </div>
+            </article>
+
+            <!-- Карточка 5 -->
+            <article class="image-card" data-category="living-room">
+                <div class="card-image">
+                    <img src="images/img5.jpg" alt="Шкаф" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="5">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Шкаф-купе "Зеркальный"</h3>
+                    <p class="image-description">Вместительная система хранения с бесшумными дверцами.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 6 -->
+            <article class="image-card" data-category="decor">
+                <div class="card-image">
+                    <img src="images/img6.jpg" alt="Тумбочка" class="gallery-img photo">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="6">
+                            <i class="far fa-heart"></i> <span class="likes">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="image-title">Тумбочка</h3>
+                    <p class="image-description">Стильное сочетание цветов с бесшумными полками.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="gallery-footer">
+        <p>&copy; 2025 Климатов Саид. Все товары сертифицированы.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
